@@ -28,6 +28,11 @@ git .gitignore
 https://gitignore.io/- para gerar o arquivo automaticamente
 
 
+git remote remove url do repositorio
+
+Boas praticas
+
+
     1  pwd
     2  mkdir treinamento-git-lf
     3  ls -ltr
