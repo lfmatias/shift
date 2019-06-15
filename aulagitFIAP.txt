@@ -1,0 +1,229 @@
+git reflog - onde conseguimos ver tudo o que foi excluido
+git reset --hard HEAD arquivo para voltar o status de um arquivo
+git reset --mixed HEAD~0 para mudar algo em arquivo e adicionar novamente
+git reset --soft HEAD~0 para mudar a mensagem do commit
+
+
+git stash -- remove as alterações para uma área temporaria
+git stash list -- lista o que tem nessa área
+git stash apply -- aplica o que está na area do stash para na branch
+git stash pop -- remove da área de stash e aplica na linha do tempo
+
+TAGS - git tag -- lista
+       git tag <nome> -- cria uma tag
+       git tag -d <nome da tag> remove a tag
+
+BRANCHS - Nome da linha do tempo. A master deve ser o repositorio canonico
+
+
+MERGES DE BRANCHS
+
+GIT BLAME -- mostra o ultimo a alterar a linha de um arquivo pelo nome
+
+
+git cherry-pick <identificador ou tag>
+
+
+git .gitignore
+https://gitignore.io/- para gerar o arquivo automaticamente
+
+
+    1  pwd
+    2  mkdir treinamento-git-lf
+    3  ls -ltr
+    4  cd treinamento-git-lf/
+    5  cd ..
+    6  dir
+    7  ls -ltr
+    8  cd treinamento-git-lf/
+    9  ls -a
+   10  cd ..
+   11  ls -a
+   12  ls -a -l
+   13  ls -al
+   14  ls -alr
+   15  ls -alrt
+   16  ls -alrt
+   17  ls --help
+   18  pwd
+   19  pwd
+   20  git config --global user.name "Luiz Flavio"
+   21  git config --global user.name
+   22  git config --global user.email "lf_matias@hotmail.com"
+   23  git config --global user.email
+   24  git config --list
+   25  pwd
+   26  git init
+   27  ls -al
+   28  vim teste
+   29  ls -latr
+   30  ls -ltr
+   31  vim arquivo01.txt
+   32  ls -ltr
+   33  git status
+   34  git add arquivo01.txt 
+   35  git status
+   36  git status
+   37  rm teste*.txt
+   38  git statrus
+   39  clear
+   40  git status
+   41  git commit -m "Adicionando arquivos iniciais para a aula"
+   42  git commit --help
+   43  git status
+   44  ls -ltr
+   45  cp arquivo01.txt arquivo02.txt
+   46  cp arquivo01.txt arquivo03.txt
+   47  git status
+   48  git add .
+   49  git status
+   50  git status
+   51  git commit -m "Adicionando dois novos arquivos"
+   52  git status
+   53  git log
+   54  git status
+   55  git view tree
+   56  git log
+   57  git log --oneline
+   58  git log --reverse
+   59  git log --oneline reverse
+   60  git log --oneline --reverse
+   61  git log --oneline --reverse > log.txt
+   62  git status
+   63  vi log.txt 
+   64  ls -ltr
+   65  rm log.txt 
+   66  clear
+   67  ls -l
+   68  git status
+   69  git add .
+   70  git status
+   71  git commit -m "Texto de Hello World no arquivo01"
+   72  git status
+   73  git log
+   74  git log
+   75  git log arquivo01.txt
+   76  git status
+   77  git diff
+   78  git status
+   79  git add .
+   80  git commit -m "Uma linha qualquer no arquivo02"
+   81  git stauts
+   82  git stauts
+   83  git status
+   84  git log --oneline --reverse
+   85  git log
+   86  git log
+   87  git log --oneline --reverse
+   88  git log
+   89  git checkout 411470aca8949bd08b9084d4991941d5c5e2eeaf
+   90  git log --oneline --reverse
+   91  ls -l
+   92  git log
+   93  git checkout master
+   94  git log
+   95  git log --oneline --reverse
+   96  git status
+   97  git diff
+   98  git add .
+   99  git commit -m "Uma terceira linha para o código teste revert"
+  100  git stauts
+  101  git status
+  102  git log
+  103  git revert HEAD~0
+  104  git log
+  105  git log --oneline --reverse
+  106  git log
+  107  git status
+  108  git revert HEAD~0
+  109  git log
+  110  git config -l
+  111  gedit
+  112  git log
+  113  git log --oneline --reverse
+  114  git log --oneline --reverse --sumary
+  115  git log --sumary
+  116  git log --help
+  117  git log --oneline --reverse --summary
+  118  git log --summary
+  119  clear
+  120  git log
+  121  git diff b4a73edc46161307b7c9db187ab1b55cfb7fb54a..79d5a5aac30d26d2eabdf2363bfc648dc7d288a8
+  122  clear
+  123  git log --oneline --reverse
+  124  git status
+  125  git diff
+  126  git checkout arquivo01.txt
+  127  git status
+  128  git log
+  129  git log --reverse
+  130  git checkout 411470aca8949bd08b9084d4991941d5c5e2eeaf arquivo01.txt
+  131  git status
+  132  git reset HEAD arquivo01.txt
+  133  git status
+  134  git status
+  135  git log
+  136  git checkout 79d5a5aac30d26d2eabdf2363bfc648dc7d288a8 arquivo01.txt
+  137  git checkout 411470aca8949bd08b9 arquivo01.txt
+  138  git add .
+  139  git commit -m "Checkout do arquivo01.txt para a primeira versão"
+  140  git status
+  141  git log
+  142  git log
+  143  git checkout 79d5a5aac30d26d2eabdf2363bfc648dc7d288a8 arquivo01.txt
+  144  git stauts
+  145  git status
+  146  git add .
+  147  git commit -m "Checkout para o arquivo01.txt com as três linhas"
+  148  git status
+  149  git log
+  150  git status
+  151  git status
+  152  git add .
+  153  git status
+  154  git reset HEAD arquivo01.txt
+  155  git statu
+  156  git status
+  157  git diff
+  158  git reset --hard HEAD~0
+  159  git diff
+  160  git status
+  161  git reset --hard HEAD~1
+  162  git log
+  163  git reflog
+  164  git merge 548cded
+  165  git dif
+  166  git diff
+  167  git reflog
+  168  git status
+  169  git log
+  170  git reflog
+  171  git reset --mixed HEAD~0
+  172  git status
+  173  git reset --mixed HEAD~1
+  174  git diff
+  175  git status
+  176  git add arquivo01.txt 
+  177  git commit -m "Exemplo de reset mixed"
+  178  git log
+  179  git reset --soft HEAD~1
+  180  git status
+  181  git commit -m "Outra mensagem para o commit"
+  182  git status
+  183  git log
+  184  git status
+  185  git status
+  186  git stash
+  187  git status
+  188  git stash list
+  189* 
+  190  git stash pop
+  191  git status
+  192  git add .
+  193  git commit -m "voltando após explicação do stash"
+  194  git status
+  195  git blame
+  196  clear
+  197  git status
+  198  history
+  199  history > historico.txt
