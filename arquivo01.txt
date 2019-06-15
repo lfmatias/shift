@@ -1,10 +1,11 @@
+Hello World com mais informações
 
-Uma 3 linha de código 
+Uma 3 linha de código
 
-dfasdfasd
+Uma terceira linha de código para
+
+fasdfasd
 fdasdfasf
-dsafas
+dsaf
 
 alteração criada no dev
-
-forçando conflito!
