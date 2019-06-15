@@ -1,0 +1,3 @@
+/teste/
+*.jpg
+!/teste/*.jpg #a linha acima é uma negativa para não ignorar jpg da pasta teste
