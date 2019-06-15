@@ -1,9 +1,11 @@
-Hello World
+Hello World com mais informações
 
-Uma terceira linha de código para o revert 
+Uma terceira linha de código para
 
 dfasdfasd
 fdasdfasf
 dsafas
+
+Forçando conflito!
 
 alteração criada no dev
